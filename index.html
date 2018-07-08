@@ -6,8 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>resume</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
 </head>
 <body>
     <nav class="navigation">
@@ -87,24 +85,75 @@
             </div>
             <div class="shop-shots">
                 <p class="shot-click">点击查看项目大图</p>
-                <div>
-                    <img class="shot" src="home.png" alt="">
-                    <img class="shot" src="shopping.png" alt="">
-                    <img class="shot" src="cart.png" alt="">
-                </div>
-                <div class="enlarge">
-                    <div class="swiper-container">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide"><img src="home.png" alt=""></div>
-                            <div class="swiper-slide"><img src="shopping.png" alt=""></div>
-                            <div class="swiper-slide"><img src="cart.png" alt=""></div>
-                        </div>
+                <div class="shop-content">
+                    <div>
+                        <img class="shot" src="home.png" alt="">
+                        <img class="shot" src="shopping.png" alt="">
+                        <img class="shot" src="cart.png" alt="">                      
+                    </div>
+                    <div class="shop-point">
+                        <dl>
+                            <dt>项目要点：</dt>
+                            <dd>Flex+vw/vh+百分比进行页面布局；axios异步获取后台数据；<br>正则检查用户输入；引入Mint-UI实现部分动效；<br>Vue+Vuex实现复杂交互逻辑;</dd>
+                            <dt>预览及源码链接:</dt>
+                            <dd><a href="">预览链接</a> | <a href="">源码链接</a></dd>
+                        </dl>
                     </div>
                 </div>   
             </div>   
         </div>
-
+        <div class="project-content">
+                <div class="project-shop">
+                    <img class="shop-cover" src="spacewar.jpg" alt="">
+                    <div class="shop-discription">
+                        <p class="title">太空战争</p>
+                        <p>一款2d太空战争小游戏，飞船通过按键操作，可释放子弹击杀敌机，敌机有数种风格，飞行路线随机，击杀几率掉装备，拾取可升级子弹。
+                        游戏使用PIXI.js库实现基本功能，PIXI-Tween实现补间动画，具备击杀爆炸动画、重新开始、火焰动画等功能，利用原生JS检测游戏碰撞、按键及触发等。
+                    </p>
+                    </div>
+                </div>
+                <div class="shop-shots">
+                    <p class="shot-click">点击查看项目大图</p>
+                    <div class="shop-content">
+                        <div>
+                            <img class="shot" src="ship1.png" alt="">
+                            <img class="shot" src="ship2.png" alt="">
+                            <img class="shot" src="ship3.png" alt="">                      
+                        </div>
+                        <div class="shop-point">
+                            <dl>
+                                <dt>项目要点：</dt>
+                                <dd>PIXI实现游戏渲染；原生JS循环检测物体碰撞；<br>面向对象管理敌机、飞船，模块化引入；<br>PIXI-Tween实现补间动画；监听键盘输入并做出响应;</dd>
+                                <dt>预览及源码链接:</dt>
+                                <dd><a href="https://caideniao.github.io/spacewar/index.html">试玩链接</a> | <a href="https://github.com/Caideniao/spacewar">源码链接</a></dd>
+                            </dl>
+                        </div>
+                    </div>   
+                </div>   
+            </div>
+            <div class="project-content">
+                    <div class="project-shop">
+                        <img class="shop-cover" src="resume.jpg" alt="">
+                        <div class="shop-discription">
+                            <p class="title">编辑器</p>
+                            <p>Vue实现的编辑器，可自定义编辑简历内容，具备登陆、注册、保存、预览等功能。</p>
+                            <div class="shop-point">
+                                    <dl>
+                                        <dt>项目要点：</dt>
+                                        <dd>PIXI实现游戏渲染；原生JS循环检测物体碰撞；<br>面向对象管理敌机、飞船，模块化引入；<br>PIXI-Tween实现补间动画；监听键盘输入并做出响应;</dd>
+                                        <dt>预览及源码链接:</dt>
+                                        <dd><a href="https://caideniao.github.io/spacewar/index.html">试玩链接</a> | <a href="https://github.com/Caideniao/spacewar">源码链接</a></dd>
+                                    </dl>
+                                </div>
+                        </div>
+                    </div>
+                    
+                </div>
     </section>
-    
+    <div class="enlarge">
+        <img src="home.png" class="largeShot" alt="">
+        <div class="cancelPop">✕</div>                 
+    </div>
+    <script src="main.js"></script> 
 </body>
 </html>
