@@ -36,6 +36,10 @@ body,html{
     display: flex;
     flex-grow: 1;
 }
+.navigation > .nav-list a{
+    text-decoration: none;
+    color:rgb(114, 114, 114);
+}
 .navigation > .nav-list .nav-item {
     padding:18px;
     display: inline-block;
@@ -54,6 +58,11 @@ body,html{
     margin:140px  0  0 9.375%;
     flex-grow: 1;
 }
+@media print {
+    .profile .profile-introduction{
+        margin:0;
+    }
+}
 .profile .profile-introduction .about{
     font-size: 58px;color: #FECE47;font-weight: bold;
     margin:16px;
@@ -69,8 +78,23 @@ body,html{
     line-height: 2em;
     margin-top: 18px;
 }
+.profile .print-image{
+    display: none;
+}
+@media print {
+    .profile .print-image{
+        display: inline-block;
+        width:50%;height: 50%;
+        text-align: center;margin-top: 58px;
+    }
+}
 .profile > .profile-animation{
     margin-right: 60px;
+}
+@media print {
+    .profile > .profile-animation{
+        display: none;
+    }
 }
 .profile .light .light-line{
     width: 2px;height: 194px;
@@ -322,6 +346,11 @@ body,html{
     margin-left: 10.9375%; padding:8px 0;
     border-bottom:4px solid #FECE47;
 }
+@media print {
+    .project .title span:first-child{
+        margin-left: 0;
+    }
+}
 .project .title > span:nth-child(2) {
     font-size: 20px;font-weight: bold;
     margin-left: 18px;color:  #6A6B76;
@@ -330,14 +359,21 @@ body,html{
     max-width: 920px;
     margin:28px auto;
 }
-.project .project-content .project-shop{
-    display: flex;
+@media print {
+    .project .project-content{
+        margin:18px auto;
+        width:100vw;
+    }
 }
-.project  .project-shop .shop-cover{
+.project .project-content .project-shop{
+    display: flex;justify-content: space-between;
+    align-items: center;
+}
+.project .project-content .project-shop .shop-cover{
     width:336px;height: 252px; 
 }
 .project  .project-shop .shop-discription{
-    display: inline-block;
+    display: inline-block;width: 51.7%;
     vertical-align: top;
     font-size: 16px;margin-left: 108px;
     font-family: Arial, Helvetica, sans-serif;
@@ -346,21 +382,95 @@ body,html{
 .project  .project-shop .shop-discription > .title{
     color:#6FCAF0;font-size: 18px;
 }
+@media print {
+    .project  .project-shop .shop-discription{
+        margin-left: 38px;
+    }
+}
 .project .shop-shots .shot-click {
     margin: 8px 0;color:lightsalmon;
     border-bottom: 2px solid lightcoral;
     display: inline-block;
+}
+@media print {
+    .project .shop-shots .shot-click{
+        display: none;
+    }
 }
 .project  .shop-shots img{
     width:90px;height: 140px;
 }
 .project .shop-content{
     display: flex;justify-content: space-between;
+    align-items: center;
 }
 .project .shop-content .shop-point{
-    margin:0 0 0 8px;line-height: 1.5em;color:rgb(110, 110, 110);
+    margin:0 0 0 8px;line-height: 1.5em;color:rgb(94, 93, 93);
     width: 52%;
 }
-.project .shop-content dl a{
+
+.project .shop-point dl a{
     text-decoration: none;color: #6FCAF0;
+}
+.small-title{
+    margin-left: 180px;
+    color: #F7A63C;font-size: 28px;
+}
+.small-work{
+    margin-left: 180px;
+    color:rgb(66, 66, 66);
+}
+.small-work a{
+    text-decoration: none;color: #6FCAF0;
+}
+.small-work img{
+    width:20%;height: 20%;
+}
+@media print {
+    .small-work{
+        margin-left: 0;
+    }
+    .small-title{
+        margin-left: 0;
+    }
+    .small-work img{
+        width: 50%;
+        height: 50%;
+    }
+}
+.experience > .experience-title,.skill > .skill-title{
+    margin-left: 180px;font-size: 48px;
+    color:#6A6B76;display: inline-block;
+    border-bottom:2px solid #FECE47;
+}
+.experience > .experience-content,.skill .skill-item{
+    margin-left: 180px;
+}
+.skill .skill-content{
+    margin-left: 180px;
+    max-width: 940px;
+}
+@media print {
+    .experience > .experience-title,.skill > .skill-title{
+        margin-left: 0;
+    }
+    .experience > .experience-content,.skill .skill-item{
+        margin-left: 0;
+    }
+    .skill .skill-content{
+        margin-left: 0;
+    }
+}
+.other-links{
+    margin: 30px 0 98px 180px;    
+    font-size: 18px; color: #6A6B76;  
+}
+@media print {
+    .other-links{
+        margin: 30px 0 98px 0;
+    }  
+}
+.other-links .link-item{
+    text-decoration: none; 
+    color:  #6FCAF0;
 }

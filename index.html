@@ -11,14 +11,14 @@
     <nav class="navigation">
         <span class="nav-resume">RESUME</span>
         <ul class="nav-list">
-            <li class="nav-item">关于</li>
-            <li class="nav-item">项目</li>
-            <li class="nav-item">技能</li>
-            <li class="nav-item">工作经历</li>
-            <li class="nav-item">联系方式</li>
+            <li class="nav-item"><a href="#about">关于</a> </li>
+            <li class="nav-item"><a href="#project">项目</a></li>
+            <li class="nav-item"><a href="#skill">技能</a></li>
+            <li class="nav-item"><a href="#experience">工作经历</a></li>
+            <li class="nav-item"><a href="#about">联系方式</a></li>
         </ul>
     </nav>
-    <section class="profile">
+    <section class="profile" id='about'>
         <div class="profile-introduction">
             <p class="about">About Me</p>
             <p class="apply">应聘前端开发 Apply for Front-end Developer</p>
@@ -30,6 +30,7 @@
                 <li>邮箱/<i>Mail</i>  huidongd@foxmail.com</li>
             </ul>
         </div>
+        <img src="resume.png" alt="" class="print-image">
         <div class="profile-animation">
             <div class="light">
                 <div class="light-line"></div>
@@ -70,7 +71,7 @@
             </div>
         </div>
     </section>
-    <section class="project">
+    <section class="project" id='project'>
         <p class="title"><span>My Project</span><span>我的个人项目</span></p>
         <div class="project-content">
             <div class="project-shop">
@@ -94,9 +95,9 @@
                     <div class="shop-point">
                         <dl>
                             <dt>项目要点：</dt>
-                            <dd>Flex+vw/vh+百分比进行页面布局；axios异步获取后台数据；<br>正则检查用户输入；引入Mint-UI实现部分动效；<br>Vue+Vuex实现复杂交互逻辑;</dd>
+                            <dd>Flex+vw/vh+百分比进行页面布局；axios异步获取后台数据；正则检查用户输入；引入Mint-UI实现部分动效；Vue+Vuex实现复杂交互逻辑;</dd>
                             <dt>预览及源码链接:</dt>
-                            <dd><a href="">预览链接</a> | <a href="">源码链接</a></dd>
+                            <dd><a href="https://caideniao.github.io/youzan/dist/index.html">预览链接：https://caideniao.github.io/youzan/dist/index.html</a><br><a href="https://github.com/Caideniao/youzan">源码链接:<br>https://github.com/Caideniao/youzan</a></dd>
                         </dl>
                     </div>
                 </div>   
@@ -108,7 +109,7 @@
                     <div class="shop-discription">
                         <p class="title">太空战争</p>
                         <p>一款2d太空战争小游戏，飞船通过按键操作，可释放子弹击杀敌机，敌机有数种风格，飞行路线随机，击杀几率掉装备，拾取可升级子弹。
-                        游戏使用PIXI.js库实现基本功能，PIXI-Tween实现补间动画，具备击杀爆炸动画、重新开始、火焰动画等功能，利用原生JS检测游戏碰撞、按键及触发等。
+                        游戏使用PIXI.js库实现基本功能，PIXI-Tween实现补间动画，具备击杀爆炸动画、重新开始、火焰动画等功能，利用原生JS检测游戏碰撞、按键及触发等。（温馨提示：WSAD控制上下左右飞行，J发射子弹）
                     </p>
                     </div>
                 </div>
@@ -125,7 +126,7 @@
                                 <dt>项目要点：</dt>
                                 <dd>PIXI实现游戏渲染；原生JS循环检测物体碰撞；<br>面向对象管理敌机、飞船，模块化引入；<br>PIXI-Tween实现补间动画；监听键盘输入并做出响应;</dd>
                                 <dt>预览及源码链接:</dt>
-                                <dd><a href="https://caideniao.github.io/spacewar/index.html">试玩链接</a> | <a href="https://github.com/Caideniao/spacewar">源码链接</a></dd>
+                                <dd><a href="https://caideniao.github.io/spacewar/index.html">试玩链接：https://caideniao.github.io/spacewar/index.html</a><br><a href="https://github.com/Caideniao/spacewar">源码链接：https://github.com/Caideniao/spacewar</a></dd>
                             </dl>
                         </div>
                     </div>   
@@ -136,20 +137,52 @@
                         <img class="shop-cover" src="resume.jpg" alt="">
                         <div class="shop-discription">
                             <p class="title">编辑器</p>
-                            <p>Vue实现的编辑器，可自定义编辑简历内容，具备登陆、注册、保存、预览等功能。</p>
+                            <p>Vue实现的编辑器，可自定义编辑简历内容，具备登陆、注册、编辑、预览等功能。本编辑器主要用vue框架构建页面组件，vuex做状态管理，HTML5 HistoryAPI做页面路由。</p>
                             <div class="shop-point">
                                     <dl>
                                         <dt>项目要点：</dt>
-                                        <dd>PIXI实现游戏渲染；原生JS循环检测物体碰撞；<br>面向对象管理敌机、飞船，模块化引入；<br>PIXI-Tween实现补间动画；监听键盘输入并做出响应;</dd>
+                                        <dd>Flex进行页面布局；<br>HTML5 HistoryAPI实现页面路由；<br>Vuex管理公共状态</dd>
                                         <dt>预览及源码链接:</dt>
-                                        <dd><a href="https://caideniao.github.io/spacewar/index.html">试玩链接</a> | <a href="https://github.com/Caideniao/spacewar">源码链接</a></dd>
+                                        <dd><a href="https://caideniao.github.io/resueme-editor/dist/index.html">预览链接：<br>https://caideniao.github.io/resueme-editor/dist/index.html</a> <br><a href="https://github.com/Caideniao/resueme-editor">源码链接：https://github.com/Caideniao/resueme-editor</a></dd>
                                     </dl>
                                 </div>
                         </div>
                     </div>
-                    
                 </div>
+            <div>
+                <p class="small-title">其他小作品</p>
+                <div class="small-work">
+                    <p>无缝轮播（自动播放，首尾相接），用JQuery完成。<span><br><a href="https://caideniao.github.io/demo.sh/loop/index.html">预览链接：https://caideniao.github.io/demo.sh/loop/index.html</a> <br> <a href="https://github.com/Caideniao/demo.sh/tree/master/loop">源码链接：https://github.com/Caideniao/demo.sh/tree/master/loop</a></span></p>
+                    <img src="slide.png" alt="" class="small-image">
+                    <p>Canvas小画板，可以用鼠标或在移动端写字画画。<span><br><a href="https://caideniao.github.io/demo.sh/canvas/canvas.html">预览链接：https://caideniao.github.io/demo.sh/canvas/canvas.html</a> <br> <a href="https://github.com/Caideniao/demo.sh/tree/master/canvas">源码链接：https://github.com/Caideniao/demo.sh/tree/master/canvas</a></span></p>
+                    <img src="canvas.png" alt="" class="small-image">
+                    <p>键盘导航，原生JS监听键盘事件，LocalStorage做本地存储，可编辑、保存。<span><br><a href="https://caideniao.github.io/demo.sh/Keyboard/index3.html">预览链接：https://caideniao.github.io/demo.sh/Keyboard/index3.html</a> <br> <a href="https://github.com/Caideniao/demo.sh/tree/master/Keyboard">源码链接https://github.com/Caideniao/demo.sh/tree/master/Keyboard</a></span></p>   
+                    <img src="keyboard.png" alt="" class="small-image">
+                </div>
+            </div>
     </section>
+    <section class="skill" id='skill'>
+        <p class="skill-title">相关技能</p>
+        <h4 class="skill-item">HTML5&CSS3</h4>
+        <p class="skill-content">了解语义化概念并能编写具有语义化的HTML文档，了解页面常见布局方式，如三栏布局、两栏布局、九宫格等，熟悉Flex。理解盒模型概念、响应式及媒体查询，了解CSS3动画.</p>
+        <h4 class="skill-item">原生JS/jQuery</h4>
+        <p class="skill-content">熟悉原生JS，理解原型、继承、闭包、作用域以及面向对象等，熟悉AJAX日常操作，了解JSONP、跨域、CORS等，了解ES6语法、promise、类等。</p>
+        <h4 class="skill-item">DOM</h4>
+        <p class="skill-content">熟悉常用DOM操作，理解事件模型、事件委托、事件传播等。</p>
+        <h4 class="skill-item">框架及工具</h4>
+        <p class="skill-content">了解git的使用，了解webpack及前端工程化，了解Vue及相关工具，可用Vue独立开发页面组件。了解HTTP及客户端与服务端通信涉及到的Session、Cookie等概念。
+        </p>
+        <h4 class="skill-item">其他</h4>
+        <p class="skill-content">通过英语六级，可流畅阅读外文文档；自学能力，独立摸索新工具、新框架并做出实物（PIXI.js）</p>
+    </section>
+    <section class="experience" id="experience">
+        <p class="experience-title">工作经历</p>
+        <p class="experience-content">2016.4-2016.9 深圳创普文化传媒 媒体运营相关工作。</p>
+        <p class="experience-content">2016.9-2018.5 深圳捷瑞晟科技 负责线上商城运营、管理，开始接触前端，自学jQuery参与了公司网站和店铺的部分设计。</p>
+    </section>
+    <div class="other-links">
+        其他链接：<a href="https://github.com/Caideniao" class="link-item">github:https://github.com/Caideniao</a>
+    </div>
     <div class="enlarge">
         <img src="home.png" class="largeShot" alt="">
         <div class="cancelPop">✕</div>                 
