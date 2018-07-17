@@ -364,14 +364,18 @@ body,html{
     margin-left: 10.9375%; padding:8px 0;
     border-bottom:4px solid #FECE47;
 }
+
+.project .title > span:nth-child(2) {
+    font-size: 20px;font-weight: bold;
+    margin-left: 18px;color:  #6A6B76;
+}
 @media print, screen and (max-width: 500px) {
     .project .title span:first-child{
         margin-left: 5px;
     }
-}
-.project .title > span:nth-child(2) {
-    font-size: 20px;font-weight: bold;
-    margin-left: 18px;color:  #6A6B76;
+    .project .title > span:nth-child(2){
+        display: none;
+    }
 }
 .project .project-content{
     max-width: 920px;
