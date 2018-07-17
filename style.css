@@ -27,7 +27,7 @@ body,html{
 }
 .navigation > .nav-resume {
     padding: 24px 24px;
-    background-color: #FECE47;
+    background-color: #F7A63C;
     font-size: 24px;
 }
 .navigation > .nav-list {
@@ -36,6 +36,24 @@ body,html{
     display: flex;
     flex-grow: 1;
 }
+ @media screen and (max-width: 500px){
+    .navigation{
+        background-color: #F7A63C;
+        /* position: fixed;top: 0; */
+        width: 100vw;
+        text-align: justify;
+    }
+    .navigation > .nav-list{
+        display: none;
+    }
+    /* .navigation > .nav-more{
+        width: 18px;height: 2px;
+        background-color: white;
+        padding: 4px 0;position: absolute;right: 16px;
+        background-clip: content-box;
+        border-top: 2px solid white;border-bottom: 2px solid white;
+    } */
+ }
 .navigation > .nav-list a{
     text-decoration: none;
     color:rgb(114, 114, 114);
@@ -58,7 +76,7 @@ body,html{
     margin:140px  0  0 9.375%;
     flex-grow: 1;
 }
-@media print {
+@media print, screen and (max-width: 500px) {
     .profile .profile-introduction{
         margin:0;
     }
@@ -79,19 +97,19 @@ body,html{
     margin-top: 18px;
 }
 .profile .print-image{
-    display: none;
+   display: none;
 }
 @media print {
-    .profile .print-image{
+    .profile > .print-image{
         display: inline-block;
-        width:50%;height: 50%;
+        width:50%;height:50%;
         text-align: center;margin-top: 58px;
     }
 }
 .profile > .profile-animation{
     margin-right: 60px;
 }
-@media print {
+@media print, screen and (max-width: 500px) {
     .profile > .profile-animation{
         display: none;
     }
@@ -346,9 +364,9 @@ body,html{
     margin-left: 10.9375%; padding:8px 0;
     border-bottom:4px solid #FECE47;
 }
-@media print {
+@media print, screen and (max-width: 500px) {
     .project .title span:first-child{
-        margin-left: 0;
+        margin-left: 5px;
     }
 }
 .project .title > span:nth-child(2) {
@@ -379,6 +397,18 @@ body,html{
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5em;color: rgb(68, 68, 68);
 }
+@media screen and (max-width: 500px) {
+    .project .project-content .project-shop{
+        display: block;
+    }
+    .project .project-content .project-shop .shop-cover{
+        width: 100vw;
+    }
+    .project  .project-shop .shop-discription{
+        display: block;margin:0 8px;
+        width: 96vw;
+    }
+}
 .project  .project-shop .shop-discription > .title{
     color:#6FCAF0;font-size: 18px;
 }
@@ -392,7 +422,7 @@ body,html{
     border-bottom: 2px solid lightcoral;
     display: inline-block;
 }
-@media print {
+@media print,screen and (max-width: 500px) {
     .project .shop-shots .shot-click{
         display: none;
     }
@@ -400,17 +430,32 @@ body,html{
 .project  .shop-shots img{
     width:90px;height: 140px;
 }
+
 .project .shop-content{
     display: flex;justify-content: space-between;
     align-items: center;
 }
 .project .shop-content .shop-point{
-    margin:0 0 0 8px;line-height: 1.5em;color:rgb(94, 93, 93);
+    margin:0 0 0 8px;line-height: 1.5em;color:rgb(70, 70, 70);
     width: 52%;
 }
-
+@media screen and (max-width: 500px){
+    .project  .shop-shots img{
+        display: none;
+    }
+    .project .shop-content .shop-point{
+        width: 98vw;
+    }
+    .project .shop-content .shop-point dd{
+        margin-left: 0;
+    }
+}
 .project .shop-point dl a{
     text-decoration: none;color: #6FCAF0;
+}
+@media screen and (max-width: 500px){
+    .project .shop-point dd{
+        margin-left: 0;}
 }
 .small-title{
     margin-left: 180px;
@@ -426,16 +471,19 @@ body,html{
 .small-work img{
     width:20%;height: 20%;
 }
-@media print {
+@media print,screen and (max-width: 500px) {
     .small-work{
-        margin-left: 0;
+        margin-left: 6px;
     }
     .small-title{
-        margin-left: 0;
+        margin-left: 6px;
     }
     .small-work img{
         width: 50%;
         height: 50%;
+    }
+    .small-work a {
+        font-size: 12px;
     }
 }
 .experience > .experience-title,.skill > .skill-title{
@@ -450,24 +498,24 @@ body,html{
     margin-left: 180px;
     max-width: 940px;
 }
-@media print {
+@media print,screen and (max-width: 500px) {
     .experience > .experience-title,.skill > .skill-title{
-        margin-left: 0;
+        margin:0 0 0 6px;
     }
     .experience > .experience-content,.skill .skill-item{
-        margin-left: 0;
+        margin-left: 6px;
     }
     .skill .skill-content{
-        margin-left: 0;
+        margin-left:6px;
     }
 }
 .other-links{
     margin: 30px 0 98px 180px;    
     font-size: 18px; color: #6A6B76;  
 }
-@media print {
+@media print,screen and (max-width: 500px) {
     .other-links{
-        margin: 30px 0 98px 0;
+        margin: 30px 0 98px 6px;
     }  
 }
 .other-links .link-item{
